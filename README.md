@@ -11,7 +11,9 @@ plan you've used, as speedometer gauges.
 > day, updated by hand when I get to it. It may lag behind, and there's no
 > release schedule.
 
-![The dashboard, showing made-up numbers](screenshot.png)
+<p align="center">
+  <img src="screenshots/dashboard.png" width="460" alt="The dashboard: speedometer gauges for the 5-hour and weekly limits, cost tiles and a daily token chart, with made-up numbers">
+</p>
 
 - **Plan limits**, live from your Claude account: the 5-hour session and weekly
   limits as speedometer gauges, with reset countdowns. The dial's redline
@@ -26,6 +28,23 @@ plan you've used, as speedometer gauges.
   week, and the needle points at the session. Hover for the numbers; click to
   open the dashboard. Closing the window keeps it in the tray. Quit from the
   tray menu.
+
+## Screenshots
+
+All the numbers in these are made up.
+
+**Near the limit.** The sweep and needle turn yellow at 70 % and red at 90 %.
+Other limits (here a weekly Opus limit and pay-as-you-go spending) show as
+linear gauges with the same zones.
+
+<img src="screenshots/near-limit.png" width="460" alt="The 5-hour gauge at 95 % in the red zone, the weekly gauge at 78 % in the yellow zone, and two linear gauges below them">
+
+**History.** Tokens per day for the last 14 days (hover a column for that
+day's numbers), and estimated cost by model and by project.
+
+<img src="screenshots/history.png" width="460" alt="A 14-day token column chart with a hover tooltip, then cost bars by model and by project">
+
+<img src="screenshots/tray-icons.png" width="460" alt="The tray icon in four states: OK, High, Near limit and No data">
 
 ## Requirements
 
@@ -84,6 +103,7 @@ real login or calls Anthropic.
 | `test_claude_usage.py` | self-check (fakes only) |
 | `install.sh` | creates the menu entry / autostart entry |
 | `icon.png` | app icon |
+| `screenshots/` | the images in this README |
 
 ## License
 
